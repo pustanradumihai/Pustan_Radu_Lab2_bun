@@ -17,5 +17,6 @@ namespace Pustan_Radu_Lab2_bun.Data
         public DbSet<Pustan_Radu_Lab2_bun.Models.Book> Book { get; set; } = default!;
         public DbSet<Pustan_Radu_Lab2_bun.Models.Publisher> Publisher { get; set; } = default!;
         public DbSet<Pustan_Radu_Lab2_bun.Models.Author> Authors { get; set; } = default!;
+        public DbSet<Pustan_Radu_Lab2_bun.Models.Category> Category { get; set; } = default!;
     }
 }
