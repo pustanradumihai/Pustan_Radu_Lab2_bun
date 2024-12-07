@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Pustan_Radu_Lab2_bun.Data;
 using Pustan_Radu_Lab2_bun.Models;
+using Pustan_Radu_Lab2_bun.Models.ViewModels;
 
 namespace Pustan_Radu_Lab2_bun.Pages.Categories
 {
@@ -20,6 +21,10 @@ namespace Pustan_Radu_Lab2_bun.Pages.Categories
         }
 
         public IList<Category> Category { get;set; } = default!;
+
+        public CategoryIndexData CategoryData { get; set; }
+        public int CategoryID { get; set; }
+        public int BookID { get; set; }
 
         public async Task OnGetAsync()
         {
