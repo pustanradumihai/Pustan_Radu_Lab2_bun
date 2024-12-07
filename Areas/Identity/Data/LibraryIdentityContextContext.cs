@@ -1,11 +1,13 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Pustan_Radu_Lab2_bun.Models;
 
 namespace Pustan_Radu_Lab2_bun.Data
 {
-    public class Pustan_Radu_Lab2_bunContext : DbContext
+    public class LibraryIdentityContext : IdentityDbContext<IdentityUser>
     {
-        public Pustan_Radu_Lab2_bunContext(DbContextOptions<Pustan_Radu_Lab2_bunContext> options)
+        public LibraryIdentityContext(DbContextOptions<LibraryIdentityContext> options)
             : base(options)
         {
         }
